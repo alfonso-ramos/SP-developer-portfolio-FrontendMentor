@@ -19,8 +19,7 @@ html {
 }
 
 body {
-    font-family:
-        'Space Grotesk', sans-serif;
+    font-family:'Space Grotesk', sans-serif;
     font-size: 1.6rem;
     line-height: 2rem;
     background-color: var(--black);
@@ -31,7 +30,7 @@ body {
 /* Globales */
 .container {
     max-width: 120rem;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -58,12 +57,14 @@ h2 {
 h3 {
     font-size: 2.4rem;
 }
-
+h1,h2,h3{
+    margin: 2rem 0;
+}
 p {
     font-size: 1.6rem;
     line-height: 2.8rem;
     font-weight: medium;
-    margin: 0;
+    margin: 2rem 0;
 }
 
 img {
@@ -102,7 +103,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;  
-    margin: 0 auto;
+    margin: 2rem auto;
     height: 7.5rem;
 }
 
@@ -110,6 +111,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 16rem;
+    margin-top: 2rem;
 }
 
 .header__profile-picture {
@@ -119,7 +121,7 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0 auto;
+    margin: 2rem auto;
 
 }
 
@@ -136,7 +138,18 @@ nav {
 .contact__button a:hover{
     color: #4EE1A0;
     transition: 400ms;
-
+}
+.header-rings{
+    position: absolute;
+    left: -55%;
+    top: 25%;
+    z-index: -1;
+    height: 12rem;
+}
+.header-circle{
+    position: absolute;
+    right: -18%;
+    top: 45%;
 }
 /* technologies-stack */
 .section__technologies-stack{
@@ -144,4 +157,82 @@ nav {
     flex-direction: column;
     text-align: center;
 
+}
+/* Projects */
+.projects-container__head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-card{
+    height: 40rem;
+    width: 34rem;
+    margin: 2rem 0 4rem 0;
+}
+.project-card a{
+    transition: 400ms;
+}
+.project-card a:hover{
+    color: var(--primary);
+    transition: 400ms;
+}
+.projectc-card__info--main{
+    margin: 2rem 0;
+}
+.projectc-card__info--main h3{
+    margin-bottom: 1rem;
+}
+.projectc-card__info--secondary{
+    display: flex;
+    gap: 3rem;
+}
+
+/* Contact Section */
+
+footer{
+    background-color: var(--dark-gray);
+    height: auto;
+    width: 100%;
+    padding: 4rem 1.6rem 6rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    margin: 1rem 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    color: white;
+}
+form input, textarea{
+    background-color: var(--dark-gray);
+    border: none;
+    margin-top: 2.5rem;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+form input{
+    height: 4rem;
+}
+form textarea{
+    height: 11rem;
+}
+
+.submit-form--button{
+    background-color: var(--dark-gray);
+    color: white;
+    border: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    align-self: flex-end;
+    margin: 3.2rem 0;
+}
+
+.footer-rings{
+    position: absolute;
+    left: -55%;
+    margin-top: 22rem;
 }
