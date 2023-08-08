@@ -25,6 +25,7 @@ body {
     line-height: 2rem;
     background-color: var(--black);
     color: white;
+    margin: 0;
 }
 
 /* Globales */
@@ -37,15 +38,12 @@ body {
 a {
     text-decoration: none;
     color: white;
-    transition: 400ms;
 }
 
-a:hover {
-    color: var(--primary);
-    transition: 400ms;
-
+hr{
+    color: var(--dark-gray);
+    margin: 4rem 0;
 }
-
 
 h1 {
     font-size: 4rem;
@@ -65,6 +63,7 @@ p {
     font-size: 1.6rem;
     line-height: 2.8rem;
     font-weight: medium;
+    margin: 0;
 }
 
 img {
@@ -103,7 +102,8 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;  
-    margin: auto;
+    margin: 0 auto;
+    height: 7.5rem;
 }
 
 .social-medias{
@@ -128,4 +128,20 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.contact__button a{
+    transition: 400ms;
+}
+.contact__button a:hover{
+    color: #4EE1A0;
+    transition: 400ms;
+
+}
+/* technologies-stack */
+.section__technologies-stack{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
 }
