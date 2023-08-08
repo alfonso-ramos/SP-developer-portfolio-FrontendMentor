@@ -24,6 +24,7 @@ body {
     font-size: 1.6rem;
     line-height: 2rem;
     background-color: var(--black);
+    color: white;
 }
 
 /* Globales */
@@ -35,25 +36,35 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
+    transition: 400ms;
+}
+
+a:hover {
+    color: var(--primary);
+    transition: 400ms;
+
 }
 
 
 h1 {
-    font-size: 8.8rem;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 4.8rem;
+    font-size: 3.2rem;
 }
 
 h3 {
     font-size: 2.4rem;
 }
 
-p{
-    font-size: 1.8rem;
+p {
+    font-size: 1.6rem;
     line-height: 2.8rem;
-    color: white;
+    font-weight: medium;
 }
 
 img {
@@ -73,8 +84,48 @@ img {
     text-align: center;
 }
 
-.darker-text{
-    color: var(--dark-gray);
+.darker-text {
+    color: var(--gray);
+}
+
+.underline {
+    text-decoration: underline #4EE1A0;
+    text-underline-offset: 1rem;
 }
 
 /* Navbar */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;  
+    margin: auto;
+}
+
+.social-medias{
+    display: flex;
+    justify-content: space-between;
+    width: 16rem;
+}
+
+.header__profile-picture {
+    height: 39rem;
+    width: 18.8rem;
+    background-image: url('../images/image-profile-mobile.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+}
+
+.header__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
