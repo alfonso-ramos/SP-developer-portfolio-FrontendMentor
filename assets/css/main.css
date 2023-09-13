@@ -30,7 +30,7 @@ body {
 /* Globales */
 .container {
     max-width: 120rem;
-    width: 95%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -212,12 +212,16 @@ nav {
 }
 
 @media (min-width: 768px) {
-    .section__technologies-stack {
+    .section__technologies-stack { 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 6rem;
         text-align: left;
-
+    }
+}
+@media (min-width: 1024px){
+    .section__technologies-stack{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
