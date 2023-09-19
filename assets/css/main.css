@@ -30,7 +30,7 @@ body {
 /* Globales */
 .container {
     max-width: 120rem;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -154,54 +154,8 @@ nav {
 
 .header-circle {
     position: absolute;
-    right: -18%;
+    right: -10%;
     top: 45%;
-}
-
-@media (min-width: 768px) {
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 1rem 2rem;
-        z-index: 1;
-    }
-
-    header {
-        height: 66rem;
-    }
-
-    .header__profile-picture {
-        height: 60rem;
-        width: 32rem;
-        background-image: url('../images/image-profile-tablet.webp');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: absolute;
-        right: -1%;
-    }
-
-    .header__text {
-        padding-top: 10rem;
-    }
-
-    .header-rings {
-        left: -20%;
-        top: 8%;
-    }
-
-    .header-circle {
-        right: 0;
-        z-index: 1;
-    }
-}
-
-@media(min-width: 768px) {
-    .header-presentation {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-    }
 }
 
 /* technologies-stack */
@@ -211,27 +165,7 @@ nav {
     text-align: center;
 }
 
-@media (min-width: 768px) {
-    .section__technologies-stack { 
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 6rem;
-        text-align: left;
-    }
-}
-@media (min-width: 1024px){
-    .section__technologies-stack{
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 /* Projects */
-@media (min-width: 768px){
-    .project-card_container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 .projects-container__head {
     display: flex;
     justify-content: space-between;
@@ -239,9 +173,13 @@ nav {
 }
 
 .project-card {
-    height: 40rem;
-    width: 34rem;
+    min-height:35rem;
+    max-height: 63rem;
     margin: 2rem 0 4rem 0;
+}
+
+.project-card__img {
+    width: 80vw;
 }
 
 .project-card a {
@@ -320,23 +258,4 @@ form textarea {
     position: absolute;
     left: -55%;
     margin-top: 22rem;
-}
-
-@media (min-width: 768px){
-    .footer-form_section{
-        padding: 6rem 16rem;
-
-    }
-}
-
-/* Vista tablet */
-@media (min-width: 768px) {
-    h1 {
-        font-size: 7.2rem;
-        line-height: 7rem;
-    }
-
-    h2 {
-        font-size: 4.8rem;
-    }
 }

@@ -1,0 +1,69 @@
+@media (min-width: 768px) {
+    
+    h1 {
+        font-size: 7.2rem;
+        line-height: 7rem;
+    }
+
+    h2 {
+        font-size: 4.8rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem 2rem;
+        z-index: 1;
+    }
+
+    header {
+        height: 70%;
+    }
+
+    .header__profile-picture {
+        height: 60rem;
+        width: 32rem;
+        background-image: url('../images/image-profile-tablet.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: -1%;
+    }
+
+    .header__text {
+        padding-top: 10rem;
+    }
+
+    .header-rings {
+        left: -20%;
+        top: 8%;
+    }
+
+    .header-circle {
+        right: 0;
+        z-index: 1;
+    }
+
+    .header-presentation {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section__technologies-stack {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
+        text-align: left;
+    }
+
+    .project-card_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-form_section {
+        padding: 6rem 16rem;
+
+    }
+}
