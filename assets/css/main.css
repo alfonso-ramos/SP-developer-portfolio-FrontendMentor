@@ -30,7 +30,7 @@ body {
 /* Globales */
 .container {
     max-width: 120rem;
-    width: 95%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -125,8 +125,7 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 2rem auto;
-
+    margin: auto;
 }
 
 .header__text {
@@ -178,11 +177,31 @@ nav {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        margin: 2rem auto;
         position: absolute;
         right: -1%;
     }
 
+    .header__text {
+        padding-top: 10rem;
+    }
+
+    .header-rings {
+        left: -20%;
+        top: 8%;
+    }
+
+    .header-circle {
+        right: 0;
+        z-index: 1;
+    }
+}
+
+@media(min-width: 768px) {
+    .header-presentation {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
 }
 
 /* technologies-stack */
@@ -191,37 +210,27 @@ nav {
     flex-direction: column;
     text-align: center;
 }
-
-@media (min-width: 768px) {
-    .section__technologies-stack {
+@media (min-width: 768px){
+    .section__technologies-stack{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
         text-align: left;
     }
 }
-
-@media (min-width: 768px) {
-    .section__technologies-stack {
+@media (min-width: 768px){
+    .section__technologies-stack{
         grid-template-columns: repeat(3, 1fr);
-        gap: 6rem;
     }
 }
 
 /* Projects */
-.projects-container__head {
+.projects-container__head{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-@media (min-width: 768px) {
-    .projects-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.project-card {
+.project-card{
     height: 40rem;
     width: 34rem;
     margin: 2rem 0 4rem 0;
@@ -251,8 +260,7 @@ nav {
 
 /* Contact Section */
 
-footer {
-
+footer{
     background-color: var(--dark-gray);
     height: auto;
     width: 100%;
@@ -307,8 +315,8 @@ form textarea {
 }
 
 /* Vista tablet */
-@media (min-width: 768px) {
-    h1 {
+@media (min-width: 768px){
+    h1{
         font-size: 7.2rem;
         line-height: 7rem;
     }
