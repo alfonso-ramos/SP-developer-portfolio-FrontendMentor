@@ -1,0 +1,15 @@
+.section__technologies-stack {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(2, 35rem);
+        gap: 3rem;
+        text-align: left;
+    }
+    @include desktop{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,115 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 2rem auto;
+    height: 7.5rem;
+}
+
+.social-medias {
+    display: flex;
+    justify-content: space-between;
+    width: 16rem;
+    margin-top: 2rem;
+}
+
+.header__profile-picture {
+    height: 39rem;
+    width: 18.8rem;
+    background-image: url('../images/image-profile-mobile.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.header__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__button a {
+    transition: 400ms;
+}
+
+.contact__button a:hover {
+    color: $primary;
+    transition: 400ms;
+}
+
+.header-rings {
+    position: absolute;
+    left: -55%;
+    top: 25%;
+    z-index: -1;
+    height: 12rem;
+}
+
+.header-circle {
+    position: absolute;
+    right: -10%;
+    top: 45%;
+}
+
+@include tablet{
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem auto;
+        width: 90vw;
+        z-index: 1;
+    }
+
+    
+    .container {
+        /* max-width: 120rem; */
+        width: 90%;
+        /* margin: 0 auto; */
+    }
+    .header__text {
+        text-align: left;
+        display: flex;
+        width: 50rem;
+        flex-direction: column;
+        align-items: start;
+    }
+    .header__profile-picture {
+        height: 60rem;
+        width: 32rem;
+        background-image: url('../images/image-profile-tablet.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: -1%;
+        z-index: -1;
+    }
+
+    .header__text {
+        padding-top: 10rem;
+        min-height: 60rem;
+        text-align: left;
+    }
+
+    .header-rings {
+        left: -20%;
+        top: 8%;
+    }
+
+    .header-circle {
+        right: 0;
+        z-index: 1;
+    }
+
+    .header-presentation {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

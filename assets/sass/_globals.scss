@@ -1,0 +1,104 @@
+@import 'mixins';
+@import 'variables';
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    background-color: $black;
+    color: white;
+    margin: 0;
+}
+
+/* Globales */
+.container {
+    max-width: 120rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    color: $dark-gray;
+    margin: 4rem 0;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 7rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h1,
+h2,
+h3 {
+    margin: 2rem 0;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: medium;
+    margin: 2rem 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Utilities */
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.darker-text {
+    color: $gray;
+}
+
+.underline {
+    text-decoration: underline $primary;
+    text-underline-offset: 1rem;
+}
+
+@include tablet{
+    h1 {
+        font-size: 7.2rem;
+        line-height: 7rem;
+    }
+
+    h2 {
+        font-size: 4.8rem;
+    }
+}

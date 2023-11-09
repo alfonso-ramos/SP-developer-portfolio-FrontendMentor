@@ -1,0 +1,60 @@
+
+
+footer {
+    background-color: $dark-gray;
+    height: auto;
+    width: 100vw;
+    padding: 4rem 1.6rem 6rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin: 1rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    color: white;
+}
+
+form input,
+textarea {
+    background-color: $dark-gray;
+    border: none;
+    margin-top: 2.5rem;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+form input {
+    height: 4rem;
+}
+
+form textarea {
+    height: 11rem;
+}
+
+.submit-form--button {
+    background-color: $dark-gray;
+    color: white;
+    border: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    align-self: flex-end;
+    margin: 3.2rem 0;
+}
+
+.footer-rings {
+    position: absolute;
+    left: -55%;
+    margin-top: 22rem;
+}
+@include tablet{
+    .footer-form_section {
+        padding: 6rem 16rem;
+    }
+}

@@ -1,0 +1,48 @@
+.projects-container__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card {
+    min-height:35rem;
+    max-height: 63rem;
+    margin: 2rem 0 4rem 0;
+}
+
+.project-card__img {
+    width: 80vw;
+}
+
+.project-card a {
+    transition: 400ms;
+}
+
+.project-card a:hover {
+    color: var(--primary);
+    transition: 400ms;
+}
+
+.projectc-card__info--main {
+    margin: 2rem 0;
+}
+
+.projectc-card__info--main h3 {
+    margin-bottom: 1rem;
+}
+
+.projectc-card__info--secondary {
+    display: flex;
+    gap: 3rem;
+}
+@include tablet{
+    .project-card_container {
+        display: grid;
+        grid-template-columns: repeat(2, 32rem);
+        gap: 2.4rem;
+        justify-content: center;
+    }
+    .project-card__img{
+        width: auto;
+    }
+}
