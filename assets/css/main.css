@@ -160,8 +160,74 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  nav {
-    flex-direction: row;
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem 2rem;
+        z-index: 1;
+    }
+
+    header {
+        height: 66rem;
+    }
+
+    .header__profile-picture {
+        height: 60rem;
+        width: 32rem;
+        background-image: url('../images/image-profile-tablet.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: -1%;
+    }
+
+    .header__text {
+        padding-top: 10rem;
+    }
+
+    .header-rings {
+        left: -20%;
+        top: 8%;
+    }
+
+    .header-circle {
+        right: 0;
+        z-index: 1;
+    }
+}
+
+@media(min-width: 768px) {
+    .header-presentation {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+/* technologies-stack */
+.section__technologies-stack {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+@media (min-width: 768px){
+    .section__technologies-stack{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
+        text-align: left;
+    }
+}
+@media (min-width: 768px){
+    .section__technologies-stack{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Projects */
+.projects-container__head{
+    display: flex;
     justify-content: space-between;
     margin: 1rem auto;
     width: 90vw;
@@ -207,7 +273,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-}
 .section__technologies-stack {
   display: flex;
   flex-direction: column;
@@ -241,6 +306,10 @@ nav {
 
 .project-card__img {
   width: 80vw;
+.project-card{
+    height: 40rem;
+    width: 34rem;
+    margin: 2rem 0 4rem 0;
 }
 
 .project-card a {
@@ -356,3 +425,14 @@ form textarea {
 }
 
 /*# sourceMappingURL=main.css.map */
+/* Vista tablet */
+@media (min-width: 768px){
+    h1{
+        font-size: 7.2rem;
+        line-height: 7rem;
+    }
+
+    h2 {
+        font-size: 4.8rem;
+    }
+}
