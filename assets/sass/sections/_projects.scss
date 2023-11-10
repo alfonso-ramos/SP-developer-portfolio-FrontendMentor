@@ -46,3 +46,8 @@
         width: auto;
     }
 }
+@include desktop{
+    .project-card_container{
+        grid-template-columns: repeat(2, 54rem);
+    }
+}

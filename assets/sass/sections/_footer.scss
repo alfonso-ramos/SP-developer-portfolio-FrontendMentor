@@ -54,7 +54,23 @@ form textarea {
     margin-top: 22rem;
 }
 @include tablet{
-    .footer-form_section {
+    .footer-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem auto;
+        width: 90vw;
+    }
+    .footer-form-container {
         padding: 6rem 16rem;
     }
+}
+
+@include desktop{
+    .footer-form-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22rem;
+    }
+
 }

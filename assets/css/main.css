@@ -276,6 +276,11 @@ nav {
     width: auto;
   }
 }
+@media screen and (min-width: 1024px) {
+  .project-card_container {
+    grid-template-columns: repeat(2, 54rem);
+  }
+}
 footer {
   background-color: #242424;
   height: auto;
@@ -331,8 +336,22 @@ form textarea {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-form_section {
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem auto;
+    width: 90vw;
+  }
+  .footer-form-container {
     padding: 6rem 16rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer-form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22rem;
   }
 }
 
