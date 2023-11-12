@@ -25,13 +25,19 @@ body {
 /* Globales */
 .container {
     max-width: 120rem;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 a {
     text-decoration: none;
     color: white;
+    transition: 400ms;
+    &:hover{
+        color: $primary;
+        transition: 400ms;
+        fill: $primary;
+    }
 }
 
 hr {

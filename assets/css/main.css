@@ -23,13 +23,19 @@ body {
 /* Globales */
 .container {
   max-width: 120rem;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 a {
   text-decoration: none;
   color: white;
+  transition: 400ms;
+}
+a:hover {
+  color: #4EE1A0;
+  transition: 400ms;
+  fill: #4EE1A0;
 }
 
 hr {
@@ -136,15 +142,6 @@ nav {
   align-items: center;
 }
 
-.contact__button a {
-  transition: 400ms;
-}
-
-.contact__button a:hover {
-  color: #4EE1A0;
-  transition: 400ms;
-}
-
 .header-rings {
   position: absolute;
   left: -55%;
@@ -167,10 +164,8 @@ nav {
     width: 90vw;
     z-index: 1;
   }
-  .container {
-    /* max-width: 120rem; */
-    width: 90%;
-    /* margin: 0 auto; */
+  .header-presentation {
+    display: flex;
   }
   .header__text {
     text-align: left;
@@ -181,11 +176,12 @@ nav {
   }
   .header__profile-picture {
     height: 60rem;
-    width: 32rem;
+    min-width: 32rem;
     background-image: url("../images/image-profile-tablet.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    order: 1;
     position: absolute;
     right: -1%;
     z-index: -1;
@@ -203,9 +199,16 @@ nav {
     right: 0;
     z-index: 1;
   }
+}
+@media screen and (min-width: 1024px) {
   .header-presentation {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20rem;
+  }
+  .header__profile-picture {
+    height: 72rem;
+    width: 44.5rem;
+    background-image: url("../images/image-profile-desktop.webp");
+    right: 5%;
   }
 }
 .section__technologies-stack {
@@ -216,7 +219,7 @@ nav {
 @media screen and (min-width: 768px) {
   .section__technologies-stack {
     display: grid;
-    grid-template-columns: repeat(2, 35rem);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     text-align: left;
   }
@@ -239,17 +242,14 @@ nav {
   margin: 2rem 0 4rem 0;
 }
 
+.project-card_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .project-card__img {
   width: 80vw;
-}
-
-.project-card a {
-  transition: 400ms;
-}
-
-.project-card a:hover {
-  color: var(--primary);
-  transition: 400ms;
 }
 
 .projectc-card__info--main {
@@ -284,7 +284,6 @@ nav {
 footer {
   background-color: #242424;
   height: auto;
-  width: 100vw;
   padding: 4rem 1.6rem 6rem 1.6rem;
   display: flex;
   flex-direction: column;
@@ -317,6 +316,10 @@ form input {
 
 form textarea {
   height: 11rem;
+}
+
+input:focus {
+  outline: 1px solid #4EE1A0;
 }
 
 .submit-form--button {

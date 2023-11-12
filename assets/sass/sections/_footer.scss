@@ -1,9 +1,6 @@
-
-
 footer {
     background-color: $dark-gray;
     height: auto;
-    width: 100vw;
     padding: 4rem 1.6rem 6rem 1.6rem;
     display: flex;
     flex-direction: column;
@@ -36,6 +33,9 @@ form input {
 
 form textarea {
     height: 11rem;
+}
+input:focus{
+    outline: 1px solid $primary;
 }
 
 .submit-form--button {
